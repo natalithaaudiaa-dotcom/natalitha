@@ -6,62 +6,99 @@
 <title>Portofolio Saya</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
+font-family:'Segoe UI', sans-serif;
 }
 
 body{
-background: linear-gradient(120deg,#6dd5ed,#2193b0);
-color:#333;
+background:linear-gradient(135deg,#ffd6e7,#c8f0ff);
+color:#444;
 }
 
-/* Navbar */
+/* NAVBAR */
+
 nav{
-background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 40px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+padding:20px 10%;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 position:sticky;
 top:0;
 }
 
 nav h2{
-color:#2193b0;
+color:#ff6fa5;
 }
 
 nav ul{
 display:flex;
 list-style:none;
-gap:20px;
+gap:25px;
 }
 
 nav ul li a{
 text-decoration:none;
-color:#333;
-font-weight:bold;
+color:#555;
+font-weight:600;
 transition:0.3s;
 }
 
 nav ul li a:hover{
-color:#2193b0;
+color:#ff6fa5;
 }
 
-/* Section */
-section{
-padding:70px 15%;
+/* HERO */
+
+.hero{
+text-align:center;
+padding:70px 20px;
 }
+
+.hero img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:5px solid white;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+margin-bottom:15px;
+}
+
+.hero h1{
+color:#ff6fa5;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+/* SECTION */
+
+section{
+padding:60px 12%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:#ff6fa5;
+font-size:28px;
+}
+
+/* CARD */
 
 .card{
 background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-margin-bottom:30px;
+padding:25px;
+border-radius:18px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+margin-bottom:25px;
 transition:0.3s;
 }
 
@@ -69,21 +106,8 @@ transition:0.3s;
 transform:translateY(-5px);
 }
 
-/* About */
-.profile{
-display:flex;
-align-items:center;
-gap:30px;
-}
+/* SKILLS */
 
-.profile img{
-width:120px;
-height:120px;
-border-radius:50%;
-border:4px solid #2193b0;
-}
-
-/* Skill */
 .skills{
 display:flex;
 flex-wrap:wrap;
@@ -91,102 +115,140 @@ gap:10px;
 }
 
 .skill{
-background:#2193b0;
+background:#ffb6d9;
 color:white;
-padding:8px 15px;
+padding:8px 14px;
 border-radius:20px;
 font-size:14px;
 }
 
-/* Contact */
-.contact p{
+/* EXPERIENCE */
+
+ul{
+padding-left:20px;
+}
+
+ul li{
 margin:8px 0;
 }
 
-/* Footer */
+/* CONTACT */
+
+.contact p{
+margin:6px 0;
+}
+
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:20px;
-color:white;
+color:#555;
 font-size:14px;
 }
-</style>
 
+</style>
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
+
 <nav>
-<h2>MyPorto</h2>
+<h2>My Portfolio</h2>
 <ul>
-<li><a href="#tentang">Tentang Saya</a></li>
-<li><a href="#pendidikan">Pendidikan</a></li>
-<li><a href="#keahlian">Keahlian</a></li>
-<li><a href="#pengalaman">Pengalaman</a></li>
-<li><a href="#kontak">Kontak</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#education">Pendidikan</a></li>
+<li><a href="#skills">Keahlian</a></li>
+<li><a href="#experience">Pengalaman</a></li>
+<li><a href="#contact">Kontak</a></li>
 </ul>
 </nav>
 
-<!-- Tentang Saya -->
-<section id="tentang">
-<div class="card profile">
+<!-- HERO -->
+
+<div class="hero">
 <img src="https://i.pravatar.cc/150" alt="foto">
-<div>
-<h2>Tentang Saya</h2>
-<p>Halo! Saya adalah siswa SMA yang memiliki minat di bidang teknologi, desain, dan kreativitas digital. Saya suka belajar hal baru, membuat proyek kreatif, dan mengembangkan kemampuan di dunia digital.</p>
+<h1>Halo! Saya Natalitha</h1>
+<p>Siswa SMA yang suka desain, teknologi, dan belajar hal baru ✨</p>
 </div>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2 class="section-title">Tentang Saya</h2>
+
+<div class="card">
+<p>
+Saya adalah siswa SMA yang memiliki minat pada bidang teknologi, desain digital, dan kreativitas. 
+Saya suka membuat proyek kreatif seperti desain poster, editing video, dan belajar membuat website sederhana.
+</p>
 </div>
+
 </section>
 
-<!-- Pendidikan -->
-<section id="pendidikan">
+<!-- EDUCATION -->
+
+<section id="education">
+<h2 class="section-title">Pendidikan</h2>
+
 <div class="card">
-<h2>Pendidikan</h2>
-<p><b>SMA Negeri Contoh</b> (2023 - Sekarang)</p>
-<p>Jurusan: IPS / IPA</p>
-<p>Saya aktif mengikuti kegiatan sekolah seperti organisasi dan lomba akademik.</p>
+<h3>SMA Negeri Contoh</h3>
+<p>2023 - Sekarang</p>
+<p>Aktif mengikuti kegiatan sekolah seperti organisasi dan lomba akademik.</p>
 </div>
+
 </section>
 
-<!-- Keahlian -->
-<section id="keahlian">
+<!-- SKILLS -->
+
+<section id="skills">
+<h2 class="section-title">Keahlian</h2>
+
 <div class="card">
-<h2>Keahlian</h2>
 <div class="skills">
 <span class="skill">HTML</span>
 <span class="skill">CSS</span>
 <span class="skill">Desain Canva</span>
 <span class="skill">Editing Video</span>
 <span class="skill">Public Speaking</span>
+<span class="skill">Content Creator</span>
 </div>
 </div>
+
 </section>
 
-<!-- Pengalaman -->
-<section id="pengalaman">
+<!-- EXPERIENCE -->
+
+<section id="experience">
+<h2 class="section-title">Pengalaman</h2>
+
 <div class="card">
-<h2>Pengalaman</h2>
 <ul>
 <li>Anggota OSIS Sekolah</li>
+<li>Panitia acara pentas seni sekolah</li>
 <li>Mengikuti lomba desain poster digital</li>
 <li>Membuat website sederhana untuk tugas sekolah</li>
-<li>Panitia acara sekolah</li>
 </ul>
 </div>
+
 </section>
 
-<!-- Kontak -->
-<section id="kontak">
+<!-- CONTACT -->
+
+<section id="contact">
+<h2 class="section-title">Kontak</h2>
+
 <div class="card contact">
-<h2>Kontak</h2>
 <p>Email : emailkamu@gmail.com</p>
 <p>Instagram : @usernamekamu</p>
-<p>WhatsApp : 08xxxxxxxxxx</p>
+<p>WhatsApp : 08xxxxxxxx</p>
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Portofolio Saya</p>
+© 2026 Portofolio Saya
 </footer>
 
 </body>
