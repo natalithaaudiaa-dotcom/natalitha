@@ -1,13 +1,193 @@
-<html>
-  <head>
-    <title>
-      WELCOME
-    </title>
-  </head>
-  <body>
-    <center>
-      <h1>SELAMAT DATANG</h1>
-      <p>design and created by Natalitha Audia</p>
-    </center>
-  </body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Saya</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body{
+background: linear-gradient(120deg,#6dd5ed,#2193b0);
+color:#333;
+}
+
+/* Navbar */
+nav{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#2193b0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#2193b0;
+}
+
+/* Section */
+section{
+padding:70px 15%;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* About */
+.profile{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+.profile img{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid #2193b0;
+}
+
+/* Skill */
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#2193b0;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* Contact */
+.contact p{
+margin:8px 0;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:20px;
+color:white;
+font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+<h2>MyPorto</h2>
+<ul>
+<li><a href="#tentang">Tentang Saya</a></li>
+<li><a href="#pendidikan">Pendidikan</a></li>
+<li><a href="#keahlian">Keahlian</a></li>
+<li><a href="#pengalaman">Pengalaman</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<!-- Tentang Saya -->
+<section id="tentang">
+<div class="card profile">
+<img src="https://i.pravatar.cc/150" alt="foto">
+<div>
+<h2>Tentang Saya</h2>
+<p>Halo! Saya adalah siswa SMA yang memiliki minat di bidang teknologi, desain, dan kreativitas digital. Saya suka belajar hal baru, membuat proyek kreatif, dan mengembangkan kemampuan di dunia digital.</p>
+</div>
+</div>
+</section>
+
+<!-- Pendidikan -->
+<section id="pendidikan">
+<div class="card">
+<h2>Pendidikan</h2>
+<p><b>SMA Negeri Contoh</b> (2023 - Sekarang)</p>
+<p>Jurusan: IPS / IPA</p>
+<p>Saya aktif mengikuti kegiatan sekolah seperti organisasi dan lomba akademik.</p>
+</div>
+</section>
+
+<!-- Keahlian -->
+<section id="keahlian">
+<div class="card">
+<h2>Keahlian</h2>
+<div class="skills">
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">Desain Canva</span>
+<span class="skill">Editing Video</span>
+<span class="skill">Public Speaking</span>
+</div>
+</div>
+</section>
+
+<!-- Pengalaman -->
+<section id="pengalaman">
+<div class="card">
+<h2>Pengalaman</h2>
+<ul>
+<li>Anggota OSIS Sekolah</li>
+<li>Mengikuti lomba desain poster digital</li>
+<li>Membuat website sederhana untuk tugas sekolah</li>
+<li>Panitia acara sekolah</li>
+</ul>
+</div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak">
+<div class="card contact">
+<h2>Kontak</h2>
+<p>Email : emailkamu@gmail.com</p>
+<p>Instagram : @usernamekamu</p>
+<p>WhatsApp : 08xxxxxxxxxx</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Portofolio Saya</p>
+</footer>
+
+</body>
 </html>
